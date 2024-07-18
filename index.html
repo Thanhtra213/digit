@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital CV</title>
+    <style>
+        body {
+            margin: 40px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .cv-document {
+            box-sizing: border-box;
+	border: none;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: arial, sans-serif, tahoma;
+	font-size: 10pt;
+}
+	 
+
+        .cv-page {
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    width: 900px;
+    min-height: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+    background-color: #fff;
+    position: relative;
+
+    padding: 40px
+}
+
+         .container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            
+        }
+            .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;            
+        }
+        
+        .header .info h1 {
+            margin: 0;
+            color: #2c3e50;
+        }
+        .header .info p {
+            margin: 5px 0;
+        }
+        .header .info strong {
+            display: inline-block;
+            width: 100px;
+        }
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            background-color: #f5e6c8;
+        }
+        .section {
+            padding: 40px;            
+            margin-top: 20px;
+        }
+        .section h2 {
+            border-bottom:1px solid black;
+            padding-bottom: 5px;
+        }
+        .education table, .experience table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .education th, .education td{
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            vertical-align: top;
+        }
+        .education th{
+            text-align: left;
+        }
+        .education td:nth-child(1) {
+            width: 30%;
+        }
+        .education td:nth-child(2) {
+            width: 80%;
+        }
+        .experience table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .experience th, .experience td{
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            vertical-align: top;
+        }
+        .experience th{
+            text-align: left;
+        }
+        .experience td:nth-child(1) {
+            width: 30%;
+        }
+        .experience td:nth-child(2) {
+            width: 80%;
+        }
+        .skills table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .skills th, .skills td {
+            border-bottom: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .activity table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .activity th, .activity td {
+            border-bottom: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .certificate table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .certificate th, .certificate td {
+            border-bottom: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <div class="info">
+            <h1>Nguyễn Thị Thanh Trà</h1>               
+                    <b>Ngày sinh: </b>18/08/2005</p>
+                    <b>Giới tính: </b>Nữ</p>
+                    <b>Địa chỉ: </b>Đà Nẵng, Việt Nam</p>
+                    <b>Email: </b> <a href="mailto:nguyenthithanhtra1808@gmail.com">nguyenthithanhtra1808@gmail.com</a></p>
+                    <b>Phone: </b> (+84)9354xxxx</p>   
+                  </div>
+                <img src="default-avatar.png" alt="Avatar">
+            </div>
+        </div>
+        <div class="section">
+            <h2>MỤC TIÊU NGHỀ NGHIỆP</h2>
+                <p>Là một sinh viên đã hoàn thành chương trình học hệ chính quy tại Đại Học FPT. Em mong muốn được làm việc ở vị trí Tester để có thể vận dụng những kiến thức đã được trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như hoàn thành tốt nhất công việc được giao</p>
+            </div>
+        </div>
+        <div class="section education">
+            <h2>HỌC VẤN</h2>
+            <table>
+                <tr>
+                    <td>09/2018 - 09/2021</td>
+                    <td>
+                        <strong>Cử nhân - FPT University</strong>
+                        <p>Chuyên ngành: Kỹ thuật phần mền                          </p>
+                        <p>GPA: 3.2/4</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11/2021 - 11/2023</td>
+                    <td>
+                        <strong>Thạc sĩ - Đại Học Duy Tân</strong>
+                        <p>Chuyên ngành: Kỹ thuật phần mềm.<p>
+                        <p> </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+        <div class="section experience">
+            <h2>KINH NGHIỆM LÀM VIỆC</h2>
+            <table>
+                 <tr>
+                     <td>06/2020 - 09/2021</td>
+                     <td>
+                     <strong>Công Ty X</strong><br>
+                     <p>Vị trí: Web Designer</p>
+                     <p>- Thiết kế Website dự trên yêu cầu của khách hàngp>
+                     <p>- Sử dụng các công cụ: Figma, Canva, PTS.</p>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>11/2021 - Hiện tại</td>
+                     <td>
+                     <strong>Công Ty Y</strong>
+                        <p>Vị trí: Tester</p>
+                        <p>- Nghiên cứu, phân tích yêu cầu, đảm bảo chất lượng đầu ra</p>
+                        <p>- Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL (MySQL, 
+SQLServer, NoSQL, …)</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+      </div>
+        <div class="section skills">
+            <h2>KỸ NĂNG</h2>
+            <table>
+                <tr>    
+                    <td>HTML/CSS</td>
+                    <td>
+                       <p>Fundamental</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>JavaScript</td>
+                    <td>
+                      <p>Intermediate</p>
+                    </td>
+                    </tr>
+                    <tr>                      
+                    <td>Python</td>
+                    <td>
+                      <p>Intermediate</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Node.js</td>
+                    <td>
+                      <p>Intermediate</p>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>PHP</td>
+                    <td>
+                      <p>Fundamental</p>
+                </td>
+            </tr>
+           </table>
+        </div>
+     </div>
+        <div class="section activity">
+            <h2>Hoạt động</h2>
+            <table>
+              <tr>
+                 <td>03/2019 - 04/2019</td>
+                 <td>
+                    <strong>FPT Edu Hackathon 2019</strong>
+                    <p>Thành tích: Giải 3 bảng A</p>
+                    <p>Đề tài: Trang web về phân loại rác thải</p>
+                 </td>
+                 </tr>
+                 <tr>
+                 <td>07/2019 - 07/2020</td>
+                 <td>
+                    <strong>Câu Lạc Bộ Z</strong>
+                    <p> Vị trí: Trưởng ban chuyên môn</p>
+                 </td>
+                 </tr>
+                <table>
+            </div>
+        </div>
+        <div class="section certificate">
+            <h2>Chứng chỉ - Giải thưởng</h2>
+            <table>
+                <tr>
+                    <td>2019</td>
+                <td>
+                    <p>Chứng chỉ tin học Microsoft Office Specialist MOS</p>
+                    <p>Chứng chỉ TOEIC</p>
+                </td>
+                </tr>
+                <tr>
+                <td>2022</p>
+                <td> 
+                   <p>Chứng chỉ International Software Testing Qualifications Board-ISTQB</p>
+                   <p>Chứng chỉ Tester ISTQB Foundation Level-CTFL</p>
+                  
+                </td>
+                </tr>
+            </table>
+            </div>           
+         <div>
+        <div class="section hobby">
+            <h2>SỞ THÍCH</h2>
+            <ul>
+                <li>Đọc sách</li>
+                <li>Âm nhạc</li>
+                <li>Đi du lịch</li>
+                <li>Làm đồ thủ công</li>
+            </ul>
+        </div>
+        <div class="section project">
+            <h2>DỰ ÁN CÁ NHÂN</h2>
+            <strong>TRANG WEB QUẢN LÝ THÚ CƯNG</strong>
+            <p>2019</p>
+            <ul>
+                <li>Vị trí:Tester</li>
+                <li>Mô tả: Ứng dụng giúp quản lý các thông tin của thú cưng như: Cân nặng, giống, tình trạng tiêm chủng, ... Bao gồm các chức năng thêm / sửa / xóa</li>
+                <li>Nhiệm vụ: Kiểm duyệt chất lượng phần mềm</li>
+                <li>Công nghệ:HTML, CSS</li>
+            </ul>
+            <strong>TRANG WEB XEM TIN TỨC</strong>
+            <p>2022</p>
+            <ul>
+                <li>Vị trí:Web Designer</li>
+                <li>Mô tả:Trang Web xem tin tức từ nhiều nguồn khác nhau, người dùng có thể tìm kiếm các tin tức dựa theo cá nhân hóa</li>
+                <li>Nhiệm vụ: Thiết kế giao diện web</li>
+                <li>Công nghệ: HTML, CSS</li>
+            </ul>
+            <strong>TRANG WEB QUẢN LÝ BÁN HÀNG</strong>
+            <p>2023</p>
+            <ul>
+                <li>Vị trí:Web Designer</li>
+                <li>Mô tả: Ứng dụng giúp quản lý thông tin các mặt hàng, số lượng hàng hóa, phân phối hàng</li>
+                <li>Nhiệm vụ: Thiết kế giao diện web</li>
+                <li>Công nghệ: HTML, CSS</li>
+            </ul>
+        </div>
+    <div class="section contact">
+        <h2>LIÊN HỆ</h2>
+        <ul>
+            <li>Github: </li> 
+            <li>Facebook:</li>
+            <li>Linkedin:</li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
